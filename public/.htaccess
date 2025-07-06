@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# React SPA fallback
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# Старые правила
+RewriteRule ^monuments$ monuments.html [L]
+RewriteRule ^(.*)$ /redirect.html?name=$1 [R,L] 

@@ -1,8 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Monuments from './components/Monuments';
-import Redirect from './components/Redirect';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Monuments from "./components/Monuments";
+import Nikolaev from "./components/Nikolaev";
+import Gagarin from "./components/Gagarin";
+import Turing from "./components/Turing";
+import Redirect from "./components/Redirect";
 
 function App() {
   return (
@@ -10,6 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/monuments" element={<Monuments />} />
+        <Route path="/nikolaev" element={<Nikolaev />} />
+        <Route path="/gagarin" element={<Gagarin />} />
+        <Route path="/turing" element={<Turing />} />
         <Route path=":name" element={<Redirect />} />
       </Routes>
     </Router>

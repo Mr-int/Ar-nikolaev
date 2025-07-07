@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import '../redirect.css';
 
 const linkMapDay = new Map([
@@ -12,17 +13,12 @@ const linkMapNight = new Map([
   ['turing', 'http://example.com/turing'],
 ]);
 
-function getQueryParam(param) {
-  const params = new URLSearchParams(window.location.search);
-  return params.get(param);
-}
-
 const Redirect = () => {
+  const { name } = useParams();
   const [link, setLink] = useState('#');
   const [label, setLabel] = useState('Оживить историю');
 
   useEffect(() => {
-    const name = getQueryParam('name');
     const hours = new Date().getHours();
     let url = '#';
     let text = 'Неизвестная ссылка';
@@ -40,7 +36,7 @@ const Redirect = () => {
     if (hours >= 20 || hours < 6) {
       createStars();
     }
-  }, []);
+  }, [name]);
 
   function createStars() {
     if (document.querySelector('.stars')) return;

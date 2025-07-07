@@ -10,8 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/monuments" element={<Monuments />} />
-        <Route path="/quests" element={<Redirect />} />
-        <Route path="/redirect" element={<Redirect />} />
+        <Route path=":name" element={<Redirect />} />
       </Routes>
     </Router>
   );

@@ -16,11 +16,8 @@ const Home = () => (
           AR
         </Link>
         <Link to="/quest" className="cta-button home-link-quest">
-          Квесты (внутренняя)
-        </Link>
-        <a href="https://gamechebminiapp.onrender.com/" className="cta-button home-link-quest" target="_blank" rel="noopener noreferrer">
           Квесты
-        </a>
+        </Link>
       </div>
     </div>
   </div>

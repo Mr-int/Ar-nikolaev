@@ -37,6 +37,7 @@ const Nikolaev = () => {
 
   return (
     <div className="instruction-block">
+      <h2>Страница Николая</h2>
       <div className="iphone-note">
         Если у вас <span className="iphone-label">iPhone</span>,<br />
         откройте сайт через Safari

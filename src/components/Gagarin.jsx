@@ -37,6 +37,7 @@ const Gagarin = () => {
 
   return (
     <div className="instruction-block">
+      <h2>Страница Гагарина</h2>
       <div className="iphone-note">
         Если у вас <span className="iphone-label">iPhone</span>,<br />
         откройте сайт через Safari

@@ -5,6 +5,7 @@ import Nikolaev from "./components/Nikolaev";
 import Gagarin from "./components/Gagarin";
 import Turing from "./components/Turing";
 import Redirect from "./components/Redirect";
+import Quest from "./components/Quest";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/nikolaev" element={<Nikolaev />} />
         <Route path="/gagarin" element={<Gagarin />} />
         <Route path="/turing" element={<Turing />} />
+        <Route path="/quest" element={<Quest />} />
         <Route path=":name" element={<Redirect />} />
       </Routes>
     </Router>

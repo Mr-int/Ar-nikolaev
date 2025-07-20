@@ -15,4 +15,23 @@
 }
 .star {
   /* Стили для отдельной звезды */
+}
+.back-button {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 10px 24px;
+  background: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(229, 46, 113, 0.15);
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.back-button:hover {
+  background: linear-gradient(90deg, #e52e71 0%, #ff8a00 100%);
+  transform: translateY(-2px) scale(1.04);
 } 

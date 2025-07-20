@@ -37,6 +37,7 @@ const Nikolaev = () => {
 
   return (
     <div className="instruction-block">
+      <a href="/" className="back-button">Вернуться назад</a>
       <h2>Страница Николая</h2>
       <div className="iphone-note">
         Если у вас <span className="iphone-label">iPhone</span>,<br />
@@ -50,9 +51,6 @@ const Nikolaev = () => {
         <li>Наведите камеру на памятник — и смотрите, как он оживает!</li>
       </ol>
       <a href={link} className="cta-button" id="ar-button">Оживить историю</a>
-      <a href="/" className="cta-button" style={{ marginTop: '20px', display: 'inline-block' }}>
-        Вернуться назад
-      </a>
     </div>
   );
 };

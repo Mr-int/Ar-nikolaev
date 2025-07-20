@@ -12,6 +12,9 @@ const Quest = () => (
     >
       Перейти к квестам
     </a>
+    <a href="/" className="cta-button" style={{ marginTop: '20px', display: 'inline-block' }}>
+      Вернуться назад
+    </a>
   </div>
 );
 

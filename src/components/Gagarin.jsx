@@ -50,6 +50,9 @@ const Gagarin = () => {
         <li>Наведите камеру на памятник — и смотрите, как он оживает!</li>
       </ol>
       <a href={link} className="cta-button" id="ar-button">Оживить историю</a>
+      <a href="/" className="cta-button" style={{ marginTop: '20px', display: 'inline-block' }}>
+        Вернуться назад
+      </a>
     </div>
   );
 };

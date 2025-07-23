@@ -1,11 +1,20 @@
 body {
     margin: 0;
-    padding: 20px;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.5;
     max-width: 600px;
     margin: 0 auto;
-    background: #031947;
+    background: #ffffff !important;
+}
+
+.white-block {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 2rem 1rem;
+  margin: 2.5rem auto 0 auto;
+  max-width: 420px;
+  color: #18181a;
 }
 
 .instruction-block {

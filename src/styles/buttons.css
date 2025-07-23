@@ -1,0 +1,46 @@
+.btn {
+  display: inline-block;
+  padding: 1em 2.2em;
+  font-size: 1.15em;
+  color: #fff;
+  background: #18181a;
+  border: 2px solid #18181a;
+  border-radius: 28px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s, border 0.2s, transform 0.2s;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  min-width: 160px;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #18181a;
+  border: 2px solid #ff3333;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  font-size: 1em;
+  color: #888;
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-weight: 500;
+  box-shadow: none;
+  margin-bottom: 1.2rem;
+  margin-left: 0;
+  text-align: left;
+  min-width: unset;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #ff3333;
+  text-decoration: underline;
+} 

@@ -8,10 +8,13 @@ import Redirect from "./components/Redirect";
 import Quest from "./components/Quest";
 import NotFound from "./components/NotFound";
 import Header from "./components/Header";
+import './styles/header.css';
+import './styles/buttons.css';
+import './redirect.css';
 
 function App() {
   return (
-    <>
+    <div className="main-container">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,7 +26,7 @@ function App() {
         <Route path=":name" element={<Redirect />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

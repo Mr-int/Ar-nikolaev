@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import '../styles/buttons.css';
+import '../redirect.css';
 
 const getLink = () => {
   const hours = new Date().getHours();
@@ -13,8 +15,10 @@ const Turing = () => {
   }, []);
 
   return (
-    <main className="container" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '70vh'}}>
-      <a href="/" className="btn" style={{background: 'none', color: '#2563eb', marginBottom: '1.5rem'}}>Вернуться назад</a>
+    <div className="white-block">
+      <div style={{width: '100%', display: 'flex'}}>
+        <a href="/" className="back-btn">Вернуться назад</a>
+      </div>
       <h2>AR Turing</h2>
       <div style={{color: '#555', fontSize: '1rem', marginBottom: '1.5rem', textAlign: 'center'}}>
         Если у вас <b>iPhone</b>, откройте сайт через Safari
@@ -26,8 +30,10 @@ const Turing = () => {
         <li>В приложении разрешите доступ к камере.</li>
         <li>Наведите камеру на памятник — и смотрите, как он оживает!</li>
       </ol>
-      <a href={link} className="btn" id="ar-button">Оживить историю</a>
-    </main>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <a href={link} className="btn" id="ar-button">Оживить историю</a>
+      </div>
+    </div>
   );
 };
 

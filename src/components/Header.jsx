@@ -23,7 +23,8 @@ const Header = () => (
       alignItems: 'center',
       gap: '1.2rem',
       width: '100%',
-      maxWidth: 900,
+      maxWidth: 700,
+      margin: '0 auto',
       padding: '0 1rem',
     }}>
       <Link to="/" className="btn" style={{background: 'none', color: '#2563eb', fontWeight: 800}}>Главная</Link>

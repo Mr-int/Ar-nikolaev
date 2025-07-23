@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  background: #232526;
-  color: #232526;
+  background: #f7f7fa;
+  color: #18181a;
   min-height: 100vh;
   transition: background 0.3s, color 0.3s;
 }
@@ -13,51 +13,59 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #2563eb;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
+  color: #1e40af;
   text-decoration: underline;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
-  background: #f5f5f5;
+  background: #e5e7eb;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ffb347;
+  background: #2563eb;
   border-radius: 8px;
 }
 
 .container {
-    max-width: 600px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+h1, h2, h3 {
+  font-weight: 800;
+  color: #18181a;
+  margin-bottom: 1.2rem;
 }
 
 p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    opacity: 0.8;
+  font-size: 1.1em;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
 }
 
 .btn {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    color: white;
-    background: #007BFF;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: 0.3s;
+  display: inline-block;
+  padding: 0.8em 2em;
+  font-size: 1.1em;
+  color: #fff;
+  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+  border: none;
+  border-radius: 24px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background: #0056b3;
-    transform: scale(1.05);
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
 } 

@@ -35,37 +35,62 @@ a:hover {
 .container {
   max-width: 700px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1.2rem;
+  border-radius: 32px;
+  background: #fff;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.06);
 }
 
 h1, h2, h3 {
   font-weight: 800;
   color: #18181a;
   margin-bottom: 1.2rem;
+  word-break: break-word;
 }
 
 p {
   font-size: 1.1em;
   margin-bottom: 1.5rem;
   opacity: 0.9;
+  word-break: break-word;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.8em 2em;
-  font-size: 1.1em;
+  padding: 1em 2.2em;
+  font-size: 1.15em;
   color: #fff;
   background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
   border: none;
-  border-radius: 24px;
+  border-radius: 28px;
   font-weight: 700;
   box-shadow: 0 2px 8px rgba(37,99,235,0.08);
   transition: background 0.2s, color 0.2s, transform 0.2s;
   cursor: pointer;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  min-width: 160px;
 }
 
 .btn:hover {
   background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
   color: #fff;
   transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+  h1, h2, h3 {
+    font-size: 1.3em;
+  }
+  .btn {
+    font-size: 1em;
+    padding: 0.8em 1.2em;
+    min-width: 120px;
+  }
 } 

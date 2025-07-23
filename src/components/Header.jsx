@@ -21,7 +21,7 @@ const Header = () => (
       margin: '0 auto',
       padding: '0 1rem'
     }}>
-      <Link to="/" className="btn" style={{background: 'none', color: '#2563eb'}}>Главное</Link>
+      <Link to="/" className="btn" style={{background: 'none', color: '#2563eb'}}>Главная</Link>
       <Link to="/nikolaev" className="btn">AR Nikolaev</Link>
       <Link to="/gagarin" className="btn">AR Gagarin</Link>
       <Link to="/quest" className="btn">Квесты</Link>

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const headerStyle = {
   width: '100%',
-  background: 'rgba(24,24,26,0.98)',
+  background: '#18181a',
   borderBottom: '1px solid #23232b',
   position: 'sticky',
   top: 0,
   zIndex: 100,
-  boxShadow: '0 2px 12px rgba(0,0,0,0.18)',
+  boxShadow: '0 2px 12px rgba(0,0,0,0.10)',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -25,23 +25,29 @@ const navStyle = {
   margin: '0 auto',
   padding: '0.3rem 0.5rem',
   borderRadius: '18px',
-  background: '#23232b',
-  boxShadow: '0 2px 12px rgba(0,0,0,0.10)',
+  background: '#fff',
+  boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
 };
 
 const linkStyle = {
-  background: 'linear-gradient(90deg, #ffb347 0%, #60a5fa 100%)',
-  color: '#18181a',
+  background: '#18181a',
+  color: '#fff',
   fontWeight: 700,
   borderRadius: '20px',
   padding: '0.5em 1.2em',
   fontSize: '1em',
-  border: 'none',
-  boxShadow: '0 1px 4px rgba(96,165,250,0.10)',
-  transition: 'background 0.2s, color 0.2s, transform 0.2s',
+  border: '2px solid #18181a',
+  boxShadow: '0 1px 4px rgba(0,0,0,0.08)',
+  transition: 'background 0.2s, color 0.2s, border 0.2s, transform 0.2s',
   textAlign: 'center',
   minWidth: 90,
   display: 'inline-block',
+};
+
+const linkHover = {
+  background: '#fff',
+  color: '#18181a',
+  border: '2px solid #ff3333',
 };
 
 const Header = () => (

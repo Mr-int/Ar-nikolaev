@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   background: #18181a;
-  color: #f3f4f6;
+  color: #18181a;
   min-height: 100vh;
   transition: background 0.3s, color 0.3s;
 }
@@ -13,13 +13,13 @@ body {
 }
 
 a {
-  color: #60a5fa;
+  color: #18181a;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: #ffb347;
+  color: #ff3333;
   text-decoration: underline;
 }
 
@@ -28,7 +28,7 @@ a:hover {
   background: #23232b;
 }
 ::-webkit-scrollbar-thumb {
-  background: #60a5fa;
+  background: #333;
   border-radius: 8px;
 }
 
@@ -37,8 +37,8 @@ a:hover {
   margin: 2.5rem auto 0 auto;
   padding: 2rem 1rem;
   border-radius: 24px;
-  background: #23232b;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  background: #fff;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@ a:hover {
 
 h1, h2, h3 {
   font-weight: 800;
-  color: #fff;
+  color: #18181a;
   margin-bottom: 1.2rem;
   word-break: break-word;
   text-align: center;
@@ -58,19 +58,20 @@ p {
   opacity: 0.92;
   word-break: break-word;
   text-align: center;
+  color: #18181a;
 }
 
 .btn {
   display: inline-block;
   padding: 1em 2.2em;
   font-size: 1.15em;
-  color: #18181a;
-  background: linear-gradient(90deg, #ffb347 0%, #60a5fa 100%);
-  border: none;
+  color: #fff;
+  background: #18181a;
+  border: 2px solid #18181a;
   border-radius: 28px;
   font-weight: 700;
-  box-shadow: 0 2px 8px rgba(96,165,250,0.10);
-  transition: background 0.2s, color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s, border 0.2s, transform 0.2s;
   cursor: pointer;
   margin-bottom: 0.5rem;
   text-align: center;
@@ -78,8 +79,9 @@ p {
 }
 
 .btn:hover {
-  background: linear-gradient(90deg, #60a5fa 0%, #ffb347 100%);
-  color: #23232b;
+  background: #fff;
+  color: #18181a;
+  border: 2px solid #ff3333;
   transform: translateY(-2px) scale(1.04);
 }
 
@@ -88,7 +90,7 @@ p {
     max-width: 98vw;
     padding: 1.2rem 0.5rem;
     border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
   }
   h1, h2, h3 {
     font-size: 1.2em;

@@ -1,59 +1,64 @@
 .monuments-root {
-  position: relative;
   min-height: 100vh;
-  overflow: hidden;
+  background: linear-gradient(135deg, #232526 0%, #ffb347 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .monuments-container {
-  background: rgba(0,0,0,0.7);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-  padding: 48px 32px;
-  margin-top: 60px;
+  background: rgba(255,255,255,0.10);
+  border-radius: 32px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 3rem 2.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
 }
+
 .monuments-icon {
-  font-size: 3.5rem;
-  margin-bottom: 18px;
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
 }
+
 .monuments-title {
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #232526;
+  margin-bottom: 1rem;
   letter-spacing: 1px;
-  margin-bottom: 10px;
 }
+
 .monuments-subtitle {
-  font-weight: 400;
-  font-size: 1.4em;
-  color: #aad8ff;
-  margin-bottom: 32px;
+  font-size: 1.1rem;
+  color: #232526;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
+
 .monuments-links {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 1rem;
   align-items: center;
-  margin-top: 30px;
 }
-.monuments-link-nikolaev {
-  width: 80%;
-  max-width: 320px;
-  font-size: 1.15em;
-  border-radius: 25px;
-  background: linear-gradient(90deg, #43cea2 60%, #185a9d 100%);
-  box-shadow: 0 4px 16px rgba(67,206,162,0.15);
+
+.cta-button {
+  background: linear-gradient(90deg, #ffb347 0%, #ffcc80 100%);
+  color: #232526;
+  border: none;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.7rem 2.2rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(255,179,71,0.10);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  cursor: pointer;
 }
-.monuments-link-gagarin {
-  width: 80%;
-  max-width: 320px;
-  font-size: 1.15em;
-  border-radius: 25px;
-  background: linear-gradient(90deg, #ff512f 60%, #dd2476 100%);
-  box-shadow: 0 4px 16px rgba(255,81,47,0.15);
-}
-.monuments-link-back {
-  width: 80%;
-  max-width: 320px;
-  font-size: 1.15em;
-  border-radius: 25px;
-  background: linear-gradient(90deg, #6c757d 60%, #495057 100%);
-  box-shadow: 0 4px 16px rgba(108,117,125,0.15);
-  margin-top: 10px;
+
+.cta-button:hover {
+  background: linear-gradient(90deg, #232526 0%, #ffb347 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
 } 

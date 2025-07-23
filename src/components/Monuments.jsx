@@ -13,10 +13,10 @@ const Monuments = () => (
       <h2 className="monuments-subtitle">Для AR-экскурсии</h2>
       <div className="monuments-links">
         <Link to="/nikolaev" className="cta-button monuments-link-nikolaev">
-          Nikolaev
+          AR Nikolaev
         </Link>
         <Link to="/gagarin" className="cta-button monuments-link-gagarin">
-          Gagarin
+          AR Gagarin
         </Link>
         <Link to="/" className="cta-button monuments-link-back">
           Назад

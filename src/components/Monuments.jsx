@@ -4,12 +4,37 @@ import '../styles/buttons.css';
 
 const Monuments = () => (
   <main className="container">
-    <h1>Памятники AR</h1>
-    <h2 style={{fontWeight: 500, color: '#555', marginBottom: '2rem'}}>Выберите памятник для AR-экскурсии</h2>
-    <div style={{display: 'flex', flexDirection: 'column', gap: '1.2rem', width: '100%', maxWidth: 320}}>
-      <Link to="/nikolaev" className="btn">AR Nikolaev</Link>
-      <Link to="/gagarin" className="btn">AR Gagarin</Link>
-      <Link to="/" className="btn">Назад</Link>
+    <div className="monuments-hero">
+      <h1>Памятники AR</h1>
+      <p className="monuments-subtitle">
+        Выберите памятник для AR-экскурсии и оживите историю
+      </p>
+    </div>
+    
+    <div className="monuments-grid">
+      <div className="monument-card">
+        <div className="monument-icon">📷</div>
+        <h3>AR Николаев</h3>
+        <p>Памятник Николаю Ивановичу Николаеву</p>
+        <Link to="/nikolaev" className="btn btn-secondary btn-camera">
+          Открыть AR
+        </Link>
+      </div>
+      
+      <div className="monument-card">
+        <div className="monument-icon">🚀</div>
+        <h3>AR Гагарин</h3>
+        <p>Памятник Юрию Алексеевичу Гагарину</p>
+        <Link to="/gagarin" className="btn btn-accent btn-camera">
+          Открыть AR
+        </Link>
+      </div>
+    </div>
+    
+    <div className="monuments-actions">
+      <Link to="/" className="btn btn-outline">
+        Вернуться на главную
+      </Link>
     </div>
   </main>
 );

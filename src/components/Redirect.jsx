@@ -17,11 +17,14 @@ const Redirect = () => {
   const { name } = useParams();
   const [link, setLink] = useState('#');
   const [label, setLabel] = useState('Оживить историю');
+  const [monumentName, setMonumentName] = useState('');
 
   useEffect(() => {
     const hours = new Date().getHours();
     let url = '#';
-    let text = 'Неизвестная ссылка';
+    let text = 'Оживить историю';
+    let name = '';
+    
     if (hours >= 6 && hours < 20 && linkMapDay.has(name)) {
       url = linkMapDay.get(name);
       text = 'Оживить историю';
@@ -29,8 +32,25 @@ const Redirect = () => {
       url = linkMapNight.get(name);
       text = 'Оживить историю';
     }
+    
+    // Определяем название памятника
+    switch (name) {
+      case 'nikolaev':
+        name = 'Николаев';
+        break;
+      case 'gagarin':
+        name = 'Гагарин';
+        break;
+      case 'turing':
+        name = 'Тьюринг';
+        break;
+      default:
+        name = 'Памятник';
+    }
+    
     setLink(url);
     setLabel(text);
+    setMonumentName(name);
 
     // Генерация звёзд ночью
     if (hours >= 20 || hours < 6) {
@@ -54,20 +74,38 @@ const Redirect = () => {
   }
 
   return (
-    <div className="instruction-block">
-      <a href="/" className="back-button">Вернуться назад</a>
-      <div className="iphone-note">
-        Если у вас <span className="iphone-label">iPhone</span>,<br />
-        откройте сайт через Safari
+    <div className="white-block">
+      <div className="ar-header">
+        <a href="/" className="back-btn">Вернуться назад</a>
       </div>
-      <ol>
-        <li>Нажмите «Оживить историю».</li>
-        <li>В открывшемся сайте — нажмите «View».</li>
-        <li>Установите приложение MixAR, если потребуется.</li>
-        <li>В приложении разрешите доступ к камере.</li>
-        <li>Наведите камеру на памятник — и смотрите, как он оживает!</li>
-      </ol>
-      <a href={link} className="cta-button" id="ar-button">{label}</a>
+      
+      <div className="ar-hero">
+        <div className="ar-icon">📷</div>
+        <h2>AR {monumentName}</h2>
+        <p className="ar-subtitle">
+          Оживите памятник с помощью дополненной реальности
+        </p>
+      </div>
+      
+      <div className="instruction-block">
+        <div className="iphone-note">
+          <span className="iphone-label">iPhone</span> Откройте сайт через Safari для лучшего опыта
+        </div>
+        
+        <ol>
+          <li>Нажмите кнопку «Оживить историю» ниже</li>
+          <li>В открывшемся сайте нажмите кнопку «View»</li>
+          <li>Установите приложение MixAR, если потребуется</li>
+          <li>В приложении разрешите доступ к камере</li>
+          <li>Наведите камеру на памятник и смотрите, как он оживает!</li>
+        </ol>
+      </div>
+      
+      <div className="ar-action">
+        <a href={link} className="cta-button ar-button btn-pulse" id="ar-button">
+          {label}
+        </a>
+      </div>
     </div>
   );
 };
